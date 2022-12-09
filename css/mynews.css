@@ -12,16 +12,16 @@
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-  margin: 0px;
-  padding: 0px;
+   color: #222;
+   font-size: 1em;
+   line-height: 1.4;
+   margin: 0px;
+   padding: 0px;
 }
 
-header{
-  height: 160px;
-  margin-top: 8px;
+header {
+   height: 160px;
+   margin-top: 8px;
 }
 
 /*
@@ -35,13 +35,13 @@ header{
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+   background: #b3d4fc;
+   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+   background: #b3d4fc;
+   text-shadow: none;
 }
 
 /*
@@ -49,12 +49,12 @@ header{
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid #ccc;
+   margin: 1em 0;
+   padding: 0;
 }
 
 /*
@@ -69,7 +69,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+   vertical-align: middle;
 }
 
 /*
@@ -77,9 +77,9 @@ video {
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+   border: 0;
+   margin: 0;
+   padding: 0;
 }
 
 /*
@@ -87,7 +87,7 @@ fieldset {
  */
 
 textarea {
-  resize: vertical;
+   resize: vertical;
 }
 
 /* ==========================================================================
@@ -104,7 +104,7 @@ textarea {
 
 .hidden,
 [hidden] {
-  display: none !important;
+   display: none !important;
 }
 
 /*
@@ -117,16 +117,16 @@ textarea {
  */
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+   border: 0;
+   clip: rect(0, 0, 0, 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   /* 1 */
 }
 
 /*
@@ -137,13 +137,13 @@ textarea {
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+   clip: auto;
+   height: auto;
+   margin: 0;
+   overflow: visible;
+   position: static;
+   white-space: inherit;
+   width: auto;
 }
 
 /*
@@ -151,7 +151,7 @@ textarea {
  */
 
 .invisible {
-  visibility: hidden;
+   visibility: hidden;
 }
 
 /*
@@ -168,12 +168,12 @@ textarea {
 
 .clearfix::before,
 .clearfix::after {
-  content: " ";
-  display: table;
+   content: ' ';
+   display: table;
 }
 
 .clearfix::after {
-  clear: both;
+   clear: both;
 }
 
 /* ==========================================================================
@@ -183,14 +183,11 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+   /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -200,155 +197,158 @@ textarea {
    ========================================================================== */
 
 @media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+   *,
+   *::before,
+   *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+   a,
+   a:visited {
+      text-decoration: underline;
+   }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+   a[href]::after {
+      content: ' (' attr(href) ')';
+   }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+   abbr[title]::after {
+      content: ' (' attr(title) ')';
+   }
 
-  /*
+   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+   a[href^='#']::after,
+   a[href^='javascript:']::after {
+      content: '';
+   }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+   pre {
+      white-space: pre-wrap !important;
+   }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+   pre,
+   blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+   }
 
-  /*
+   /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
+   thead {
+      display: table-header-group;
+   }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+   tr,
+   img {
+      page-break-inside: avoid;
+   }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+   p,
+   h2,
+   h3 {
+      orphans: 3;
+      widows: 3;
+   }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+   h2,
+   h3 {
+      page-break-after: avoid;
+   }
 }
-.inline-block{ 
-  display: inline-block;
+.inline-block {
+   display: inline-block;
 }
 
 header {
-  background-color: #fcfcfc;
+   background-color: #fcfcfc;
 }
 #header-main {
-  clear: both;
-  padding-top: 12px;
-  text-align: center;
-  border-bottom: 1px solid #d1d8e4;
-  padding-bottom: 5px;
- 
+   clear: both;
+   padding-top: 12px;
+   text-align: center;
+   border-bottom: 1px solid #d1d8e4;
+   padding-bottom: 5px;
 }
 
-#header-main h1{
-  display: inline-block;
-  font-family: 'Humanbumsuk';
-  font-size: 30px;
+#header-main h1 {
+   display: inline-block;
+   font-family: 'Humanbumsuk';
+   font-size: 30px;
 }
 
-#header-main img{
-  height: 130px;
-  width: 150px;
-  
+#header-main img {
+   height: 130px;
+   width: 150px;
 }
 
 main {
-  background-color: #fcfcfc;
-  display: inline-block; /* 마진상쇄 해결법*/
-  width: 1500px;
-  padding: 20px 30px;
-  margin: 0 auto;
-  text-align: end;
+   background-color: #fcfcfc;
+   display: inline-block; /* 마진상쇄 해결법*/
+   width: 1500px;
+   padding: 20px 30px;
+   margin: 0 auto;
+   text-align: end;
 }
 
-#mains .inline-block:first-child{
-  width: 750px;
-
+#mains .inline-block:first-child {
+   width: 750px;
 }
 
-#mains .inline-block:last-child{
-  width: 400px;
-  vertical-align: top;
-
+#mains .inline-block:last-child {
+   width: 400px;
+   vertical-align: top;
 }
 #news-List {
-  width: 800px;
-  padding-left: 100px;
-  font-family: 'twayair';
-  font-size: 17px;
-  text-align: left;
+   width: 800px;
+   padding-left: 100px;
+   font-family: 'twayair';
+   font-size: 17px;
+   text-align: left;
 }
 
 #news-banner {
-    width: 400px;
-    height: 300px;
-    margin-left: 180px;
-    text-align: left;
-    background: antiquewhite;
-    border: 3px solid #dee2e6;
+   width: 400px;
+   height: 300px;
+   margin-left: 180px;
+   text-align: left;
+   background: antiquewhite;
+   border: 3px solid #dee2e6;
 }
 
 #suwon-enews {
-  width: 400px;
-  height: 450px;
-  margin-left: 180px;
-  margin-top: 100px;
-  text-align: left;
-  background: #f8f9fa;
-  border: 3px solid #dee2e6;
-  font-family: 'twayair';
-  font-size: 17px;
+   width: 400px;
+   height: 450px;
+   margin-left: 180px;
+   margin-top: 100px;
+   text-align: left;
+   background: #f8f9fa;
+   border: 3px solid #dee2e6;
+   font-family: 'twayair';
+   font-size: 17px;
 }
 
-#suwon-enews p{
-  margin-top: 0;
-  margin-bottom: 2px;
-  margin-left: 8px;
+#suwon-enews p {
+   margin-top: 0;
+   margin-bottom: 2px;
+   margin-left: 8px;
 }
 
 #suwon-enews button {
-  margin: 5px 0px 10px 5px;
+   margin: 5px 0px 10px 5px;
+}
+
+#banner-text {
+   font-family: 'twayair';
+   font-size: 12px;
+   color: snow;
+   margin-bottom: -40px;
 }
