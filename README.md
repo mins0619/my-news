@@ -11,10 +11,7 @@
 <p>나만의 수원 e-뉴스는 정부 공공 API 포털로부터 제공받은 수원 e-news의 API를 활용하여 최신 뉴스의 정보와 이벤트 배너 그리고 수원 e 뉴스 채널의 설명과 이동을 확인할 수 있도록 도와주는 페이지입니다. </p>
 
 <p>전체 페이지</p>
-    <img src='https://user-images.githubusercontent.com/50876935/206856225-c0de042c-1749-4631-90ce-6ba1a61696a1.PNG' width="300" >
-
-<p>베너와 홍보영상 이동</p>
-  <img src='' width="300" >
+    <img src='https://user-images.githubusercontent.com/50876935/206856225-c0de042c-1749-4631-90ce-6ba1a61696a1.PNG'  >
 
 ## Service & Explanation
 
