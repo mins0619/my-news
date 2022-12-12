@@ -61,6 +61,7 @@
                <table id="news-List" class="table">
                   <thead>
                      <tr>
+                        <!-- 뉴스 api를 불러오기 위한 테이블 형식에 목록 작성 -->
                         <th scope="col">번호</th>
                         <th scope="col">제목</th>
                         <th scope="col">작성일시</th>
@@ -156,20 +157,24 @@
       </script>
       <script>
          fetch(
+            // 수원 e 뉴스 api를 패치 형식으로 불러옴.
             'https://api.odcloud.kr/api/15089803/v1/uddi:62f94409-406b-4603-b583-ccde75a18d5c?page=1&perPage=20&serviceKey=pZY78PIP5%2FY2k5zgnjW2uMySD528QoSdZvFGYxXR7Qn5zjvToyAi2T41MRncF6h71ZJTFAY4%2BtSHOZ5XG3TB1A%3D%3D',
          )
             .then(response => response.json())
             .then(json => {
+               // 브라우저에서 불러온 목록을 확인 할 수 있도록 console 제공
                console.log('데이터', json.data);
                const ul = document.querySelector('#newsContents');
                for (let i = 1; i < json.data.length; i++) {
                   if (json.data[i].작성완료일 == null) {
+                     // api 내 기사가 없는 경우가 있어 작성 완료일이 비어있는 경우 "기사 없음 상태로 변경"
                      ul.innerHTML += `<tr> 
               <th scope="row">${[i]}</th>
               <td>기사없음</td> 
               <td>${json.data[i].상태}</td>
             </tr>`;
                   } else {
+                     // 있을경우 기사 제목과 작성완료일을 출력
                      ul.innerHTML += `<tr> 
               <th scope="row">${[i]}</th>
               <td>${json.data[i].기사제목}</td> 
